@@ -24,7 +24,16 @@ class Jet2HolidaysHomePage
   end
 
   def check_box_arrival
-    all(".checkbox-button-group__item--indent")[7].click
+    all(".checkbox-button-group__item--indent")[0].click
+  end
+
+  def click_list_date
+    all(".search-box-group__link")[2].click
+  end
+
+  def click_month
+    find("#duration-month").click
+    select('May', :from => "#duration-month")
   end
 
 

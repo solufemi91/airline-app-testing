@@ -34,15 +34,7 @@ class Jet2HolidaysHomePage
   def click_month_dropdown
     find("#duration-month").click
   end
-  #
-  # def select_month
-  #   status1 = page.find("#duration-month").disabled?
-  #   status2 = page.find("#duration-month").visible?
-  #   if status1 == false && status2 == true
-  #     select('May', :from => "#duration-month")
-  #   end
-  #
-  # end
+
   def select_month(month)
     dropdown_list = find("#duration-month")
     options = dropdown_list.all("option")

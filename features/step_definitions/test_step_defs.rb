@@ -27,5 +27,8 @@ When("I click this") do
 end
 
 Then("this happens") do
-  pending # Write code here that turns the phrase above into concrete actions
+ #  url = URI.parse(current_url)
+ # expect(url).to eq URI.parse(sign_in_page.sign_in_page_link)
+expect(current_url).to include('https://www.jet2holidays.com/city-breaks')
+ sleep 5
 end

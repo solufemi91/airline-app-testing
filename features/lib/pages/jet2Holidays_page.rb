@@ -59,5 +59,18 @@ class Jet2HolidaysHomePage
     all(".j017-close-lightbox")[0].click
   end
 
+  def select_nights(index)
+    find("#search-box-nights").click
+    dropdown_list = find("#search-box-nights")
+    options = dropdown_list.all("option")
+    options[index].click
+  end
+
+  def find_holiday
+    all(".search-box__submit")[0].click
+  end
+
+
+
 
 end

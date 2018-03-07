@@ -20,8 +20,10 @@ When("I click this") do
   sleep 1
   jet2Holidays_Homepage.select_month('Mar')
   jet2Holidays_Homepage.select_day('10')
+  jet2Holidays_Homepage.select_nights(2)
+  jet2Holidays_Homepage.find_holiday
 
-  sleep 1
+  sleep 3
 end
 
 Then("this happens") do

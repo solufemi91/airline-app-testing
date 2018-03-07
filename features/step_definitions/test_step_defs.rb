@@ -11,8 +11,12 @@ Given("I am on the jet2holidays home page") do
 
   jet2Holidays_Homepage.click_list_date
 
-  jet2Holidays_Homepage.click_month
+  jet2Holidays_Homepage.click_month_dropdown
+  sleep 1
+  jet2Holidays_Homepage.select_month('Jun')
+
   sleep 5
+
 end
 
 When("I click this") do

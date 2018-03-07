@@ -45,6 +45,19 @@ class Jet2HolidaysHomePage
      end
   end
 
+  def select_day(day)
+    options = all(".js-day")
+    options.each do |option|
+       if option.text == day
+         option.click
+         puts 'day has been found'
+       end
+     end
+  end
+
+  def click_pop_up
+    all(".j017-close-lightbox")[0].click
+  end
 
 
 end
